@@ -4,19 +4,23 @@
     box-sizing: border-box;
 }
 
-section {
+.click-screen {
     height: 100vh;
-    background-color: lightgoldenrodyellow;
+    background-color: lightgoldenrodyellow; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.game h1 {
+.click-screen h1 {
     font-size: 30px;
     text-align: center;
 }
 
-.game img {
+.click-screen img {
     width: 150px;
-    opacity: 0;
+    opacity: 1;
+    position: absolute;
 }
 
+div.fadeIn {
+    opacity: 1;
+}
