@@ -32,7 +32,9 @@ const game = () => {
         
         if(found === true)
         {
-            cat.toggleAttribute("fadeIn", false);
+            // cat.toggleAttribute("fadeIn", false);
+            cat.style.opacity = "0";
+            // cat.style.visibility = "hidden";
             clickScreen.style.backgroundColor  = "#fafad2";
             found = false;
             game();
@@ -40,7 +42,9 @@ const game = () => {
         
         if (mouseX >= catX && mouseX <= (catX + cat.width) && mouseY >=catY && mouseY <=(catY + cat.height))
         {
-            cat.classList.add('fadeIn');
+            // cat.classList.add('fadeIn');
+            // cat.style.visibility = "visible";
+            cat.style.opacity = "1";
             clickScreen.style.backgroundColor  = "#a1a112";
             found = true;
         }
